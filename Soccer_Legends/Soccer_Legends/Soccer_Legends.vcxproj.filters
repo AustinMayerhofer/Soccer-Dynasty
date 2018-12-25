@@ -24,6 +24,9 @@
     <ClCompile Include="Team.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="League.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="World.h">
@@ -32,5 +35,12 @@
     <ClInclude Include="Team.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="League.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="teams.txt" />
+    <Text Include="leagues.txt" />
   </ItemGroup>
 </Project>
