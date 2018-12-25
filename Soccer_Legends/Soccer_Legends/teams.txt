@@ -1,0 +1,44 @@
+Manchester City,VACANT,1,88,83
+Tottenham,VACANT,1,89,83
+Chelsea,VACANT,1,84,83
+Liverpool,VACANT,1,84,82
+Manchester United,VACANT,1,84,79
+Arsenal,VACANT,1,85,80
+Everton,VACANT,1,79,79
+Leicester City,VACANT,1,82,78
+West Ham,VACANT,1,79,77
+Watford,VACANT,1,78,76
+Crystal Palace,VACANT,1,78,76
+Burnley,VACANT,1,76,77
+Southampton,VACANT,1,76,77
+Bournemouth,VACANT,1,76,77
+Brighton,VACANT,1,77,76
+Wolves,VACANT,1,76,76
+Newcastle United,VACANT,1,76,76
+Fulham,VACANT,1,76,73
+Huddersfield,VACANT,1,74,75
+Cardiff City,VACANT,1,73,73
+Stoke City,VACANT,2,72,73
+West Brom,VACANT,2,76,73
+Aston Villa,VACANT,2,74,71
+Nottingham Forest,VACANT,2,75,70
+Norwich City,VACANT,2,73,70
+Leeds United,VACANT,2,72,73
+Middlesbrough,VACANT,2,71,73
+Derby County,VACANT,2,71,70
+Swanseas City,VACANT,2,70,70
+Sheffield Wednesday,VACANT,2,72,68
+Bristol City,VACANT,2,72,70
+Brentford,VACANT,2,72,70
+Birmingham City,VACANT,2,71,70
+Sheffield United,VACANT,2,70,70
+QPR,VACANT,2,70,70
+Preston,VACANT,2,70,69
+Wigan Athletic,VACANT,2,70,69
+Millwall,VACANT,2,69,69
+Hull City,VACANT,2,69,68
+Blackburn Rovers,VACANT,2,68,69
+Bolton,VACANT,2,68,69
+Reading,VACANT,2,68,70
+Ipswich,VACANT,2,67,68
+Rotherham United,VACANT,2,67,67
