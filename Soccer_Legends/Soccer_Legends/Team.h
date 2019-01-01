@@ -18,6 +18,8 @@ private:
 	int losses;
 	int draws;
 
+	// test
+
 };
 
 #endif
