@@ -11,6 +11,7 @@ public:
 
 private:
 	int generate_team_goals(Team* team, Team* opponent);
+	int generate_random_goals();
 };
 
 #endif

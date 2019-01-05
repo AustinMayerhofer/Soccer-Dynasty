@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="leagues.txt" />
+    <Text Include="Premier_League_Goal_Distribution.txt" />
     <Text Include="teams.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
