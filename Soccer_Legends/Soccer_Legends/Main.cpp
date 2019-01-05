@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <random>
 #include "World.h"
 #include "Team.h"
 
@@ -15,6 +16,7 @@ int main(int argc, char* argv[]) {
 	check_arguments(argc);
 	World earth(argv[1], argv[2]);
 	earth.league(2)->printTeams();
+
 	system("Pause");  // FIXME
 	return 0;
 }
