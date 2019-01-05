@@ -23,4 +23,4 @@ private:
 	void add_team(std::string team_name, std::string owner, int league_id, double off_rating, double def_rating);
 };
 
-#endif WORLD_H
+#endif
