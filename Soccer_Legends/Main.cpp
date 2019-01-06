@@ -13,6 +13,6 @@ void check_arguments(int argc) {
 int main(int argc, char* argv[]) {
 	check_arguments(argc);
 	World earth(argv[1], argv[2]);
-	earth.league(2)->printTeams();
+	
 	return 0;
 }

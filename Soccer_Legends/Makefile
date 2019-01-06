@@ -7,8 +7,8 @@ Main.o: Main.cpp World.h Team.h
 Game.o: Game.cpp Team.h Random.h
 	g++ -g -Wall -Werror -c -std=c++11 Game.cpp Team.h Random.h
 
-League.o: League.cpp Team.h
-	g++ -g -Wall -Werror -c -std=c++11 League.cpp Team.h
+League.o: League.cpp Team.h Game.h
+	g++ -g -Wall -Werror -c -std=c++11 League.cpp Team.h Game.h
 
 Random.o: Random.cpp
 	g++ -g -Wall -Werror -c -std=c++11 Random.cpp

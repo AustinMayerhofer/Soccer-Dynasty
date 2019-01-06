@@ -1,4 +1,5 @@
 #include "League.h"
+#include "Game.h"
 
 League::League(std::string league_name, int league_id) : name(league_name), id(league_id), teams(0) {
 
