@@ -63,7 +63,7 @@ int Game::increase_goals(int starting_goals, Team* team, Team* opponent) {
 	rating_diff *= 10;  // multiplier to have no decimal
 	Random rand;
 
-	int LOOPS = 5;
+	int LOOPS = 10;
 
 	for (int i = 0; i < LOOPS; i++) {
 		int num = rand.randInt(1, 1000);
@@ -97,7 +97,7 @@ int Game::decrease_goals(int starting_goals, Team* team, Team* opponent) {
 	rating_diff *= 10;
 	Random rand;
 
-	int LOOPS = 5;
+	int LOOPS = 100;  // higher number of more randomness
 
 	for (int i = 0; i < LOOPS; i++) {
 		int num = rand.randInt(1, 1000);

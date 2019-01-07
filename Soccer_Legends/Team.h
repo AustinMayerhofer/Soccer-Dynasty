@@ -7,6 +7,8 @@ class Team
 public:
 	Team(std::string team_name, std::string team_owner, int league_identifier, double offensive_rating, double defensive_rating);
 	void printTeamBio();
+	void printSeasonInfo();
+	std::string getName();
 	int getOffRating();
 	int getDefRating();
 	int getSeasonWins();
@@ -14,11 +16,13 @@ public:
 	int getSeasonDraws();
 	int getSeasonGoals();
 	int getSeasonGA();
+	int getSeasonPoints();
 	void setSeasonWins(int wins);
 	void setSeasonLosses(int losses);
 	void setSeasonDraws(int draws);
 	void setSeasonGoals(int goals);
 	void setSeasonGA(int GA);
+	void resetSeason();
 
 private:
 	std::string name;
