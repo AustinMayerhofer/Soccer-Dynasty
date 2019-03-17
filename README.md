@@ -1,6 +1,10 @@
 # Soccer-Legends
 Text-based soccer simulator made in Visual Studio
 
+# How to run
+* $ make
+* $ ./soccer_legends leagues.txt teams.txt
+
 # Files read in
 
 ## leagues.txt
