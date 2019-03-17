@@ -42,3 +42,26 @@ Bolton,VACANT,2,68,69
 Reading,VACANT,2,68,70
 Ipswich,VACANT,2,67,68
 Rotherham United,VACANT,2,67,67
+Atlanta United,VACANT,3,78,69
+Sporting KC,VACANT,3,71,70
+NY Red Bulls,VACANT,3,68,70
+LA Galaxy,VACANT,3,85,67
+DC United,VACANT,3,80,68
+Columbus Crew SC,VACANT,3,73,69
+LAFC,VACANT,3,73,69
+Seattle Sounders,VACANT,3,72,69
+Minnesota United,VACANT,3,71,70
+Montreal Impact,VACANT,3,71,68
+Portland Timbers,VACANT,3,68,69
+New York City FC,VACANT,3,73,69
+Real Salt Lake,VACANT,3,71,67
+Colorado Rapids,VACANT,3,71,67
+Houston Dynamo,VACANT,3,70,68
+SJ Earthquakes,VACANT,3,70,69
+FC Dallas,VACANT,3,70,69
+Philadelphia,VACANT,3,69,67
+Toronto FC,VACANT,3,69,70
+Chicago Fire,VACANT,3,69,67
+New England,VACANT,3,69,67
+Orlando City,VACANT,3,73,63
+Vancouver Whitecaps,VACANT,3,70,66

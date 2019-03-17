@@ -14,6 +14,18 @@ void Game::playSeasonGame() {
 
 }
 
+// TODO: Update team info?
+// TODO: Add something that indicates if a game went into ET
+void Game::playKnockoutGame() {
+	int home_goals = generate_team_goals(home, away);
+	int away_goals = generate_team_goals(away, home);
+
+	if (home_goals == away_goals) {
+		pick_winner_in_extra_time(home, away, home_goals, away_goals);
+	}
+	
+}
+
 int Game::generate_team_goals(Team* team, Team* opponent) {
 	 int goals = generate_random_goals();
 
@@ -97,7 +109,7 @@ int Game::decrease_goals(int starting_goals, Team* team, Team* opponent) {
 	rating_diff *= 10;
 	Random rand;
 
-	int LOOPS = 100;  // higher number of more randomness
+	int LOOPS = 15;  // higher number of more randomness
 
 	for (int i = 0; i < LOOPS; i++) {
 		int num = rand.randInt(1, 1000);
@@ -123,6 +135,22 @@ int Game::decrease_goals(int starting_goals, Team* team, Team* opponent) {
 
 	return final_goals;
 
+}
+
+// chooses a winner if a knockout game is tied
+void Game::pick_winner_in_extra_time(Team* home, Team* away, int& home_goals, int& away_goals) {
+	Random rand;
+	int home_win_probability = home->getOffRating() + home->getDefRating();
+	int away_win_probability = away->getOffRating() + away->getDefRating();
+	int result = rand.randInt(1, home_win_probability + away_win_probability);
+
+	if (result <= home_win_probability) {
+		home_goals += 1;
+	}
+	else {
+		away_goals += 1;
+	}
+	
 }
 
 void Game::update_team_info(int home_goals, int away_goals) {
