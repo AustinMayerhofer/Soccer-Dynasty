@@ -16,6 +16,7 @@ public:
 	int getSeasonDraws();
 	int getSeasonGoals();
 	int getSeasonGA();
+	int getSeasonGD();
 	int getSeasonPoints();
 	void setSeasonWins(int wins);
 	void setSeasonLosses(int losses);

@@ -14,8 +14,8 @@ void Team::printTeamBio() {
 }
 
 void Team::printSeasonInfo() {
-	std::cout << name << " " << season_wins << "-" << season_losses << "-" << season_draws << " (" << getSeasonPoints() << ") "
-	<< season_goals << " : " << season_GA;
+	std::cout << name << " " << season_wins << "-" << season_losses << "-" << season_draws << " (" << getSeasonPoints() << " pts) "
+	<< season_goals << " : " << season_GA << " (" << getSeasonGD() << " GD)";
 }
 
 std::string Team::getName() {
@@ -48,6 +48,10 @@ int Team::getSeasonGoals() {
 
 int Team::getSeasonGA() {
 	return season_GA;
+}
+
+int Team::getSeasonGD() {
+	return season_goals - season_GA;
 }
 
 int Team::getSeasonPoints() {

@@ -20,6 +20,11 @@ void League::printStandings() {
 			if (standings[j]->getSeasonPoints() > standings[j-1]->getSeasonPoints()) {
 				std::swap(standings[j], standings[j-1]);
 			}
+			else if (standings[j]->getSeasonPoints() == standings[j-1]->getSeasonPoints()) {
+				if (standings[j]->getSeasonGD() > standings[j-1]->getSeasonGD()) {
+					std::swap(standings[j], standings[j-1]);
+				}
+			}
 			else {
 				break;
 			}
