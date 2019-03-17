@@ -65,3 +65,21 @@ Chicago Fire,VACANT,3,69,67
 New England,VACANT,3,69,67
 Orlando City,VACANT,3,73,63
 Vancouver Whitecaps,VACANT,3,70,66
+FC Bayern,VACANT,4,90,85
+Dortmund,VACANT,4,81,79
+Leverkusen,VACANT,4,80,78
+TSG Hoffenheim,VACANT,4,76,78
+Borussia M'Gladbach,VACANT,4,81,78
+RB Leipzig,VACANT,4,80,77
+Schalke,VACANt,4,77,77
+VfL Wolfsburg,VACANT,4,77,77
+Werder Bremen,VACANT,4,76,76
+Frankfurt,VACANT,4,81,77
+VfB Stuttgart,VACANT,4,75,74
+Hertha BSC,VACANT,4,77,77
+1. FSV Mainz 05,VACANT,4,74,75
+Hannover 96,VACANT,4,73,73
+FC Augsburg,VACANT,4,75,74
+SC Freiburg,VACANT,4,75,73
+Dusseldorf,VACANT,4,73,72
+1. FC Nurnberg,VACANT,4,73,72
