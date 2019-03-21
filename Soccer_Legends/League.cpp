@@ -5,6 +5,10 @@ League::League(std::string league_name, int league_id) : name(league_name), id(l
 
 }
 
+League::League(std::string league_name) : name(league_name), teams(0), season_games(0) {
+
+}
+
 void League::playSeason() {
 	reset_season();
 	play_round_robin_double_header();

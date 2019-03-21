@@ -8,6 +8,7 @@ class League
 {
 public:
 	League(std::string league_name, int league_id);
+	League(std::string league_name);
 	void playSeason();
 	void printStandings();
 	void printTeams();

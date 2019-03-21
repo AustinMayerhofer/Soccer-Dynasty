@@ -13,6 +13,7 @@ public:
 
 private:
 	std::vector<League*> leagues;
+	std::vector<Tournament*> tournaments;
 
 	// file reading
 	void read_leagues_file(std::string name);

@@ -1,5 +1,5 @@
-soccer_dynasty: Main.o Game.o League.o Random.o Team.o World.o
-	g++ -g -Wall -Werror -std=c++11 -o soccer_dynasty Main.o Game.o League.o Random.o Team.o World.o
+soccer_dynasty: Main.o Game.o League.o Random.o Team.o World.o Tournament.o
+	g++ -g -Wall -Werror -std=c++11 -o soccer_dynasty Main.o Game.o League.o Random.o Team.o World.o Tournament.o
 
 Main.o: Main.cpp World.h Team.h
 	g++ -g -Wall -Werror -c -std=c++11 Main.cpp World.h Team.h
@@ -18,6 +18,9 @@ Team.o: Team.cpp
 
 World.o: World.cpp League.h
 	g++ -g -Wall -Werror -c -std=c++11 World.cpp League.h
+
+Tournament.o: Tournament.cpp Team.h League.h
+	g++ -g -Wall -Werror -c -std=c++11 Tournament.cpp Team.h League.h
 
 clean:
 	rm -rf *.o *.gch soccer_dynasty
