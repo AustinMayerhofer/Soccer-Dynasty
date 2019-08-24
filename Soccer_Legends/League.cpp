@@ -73,4 +73,8 @@ void League::reset_season() {
 	for (auto& team : teams) {
 		team->resetSeason();
 	}
+
+	for (auto& game : season_games) {
+		delete game;
+	}
 }
