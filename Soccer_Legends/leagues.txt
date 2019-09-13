@@ -1,4 +1,5 @@
-Premier League,1
-EFL Championship,2
-MLS,3
-Bundesliga,4
+Premier League,1,2400
+EFL Championship,2,334.6
+MLS,3,338.1
+Bundesliga,4,1515.5
+International,5,0

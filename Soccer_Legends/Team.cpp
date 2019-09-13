@@ -9,6 +9,10 @@ Team::Team(std::string team_name, std::string team_owner, int league_identifier,
 {
 }
 
+bool Team::operator==(Team& team) {
+	return this->getName() == team.getName();
+}
+
 void Team::printTeamBio() {
 	std::cout << name << " (" << owner << ")" << std::endl;
 }

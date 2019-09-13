@@ -21,7 +21,7 @@ private:
 	void read_teams_file(std::string name);
 	void open_file(std::ifstream& stream, std::string file_name);
 	void throw_file_error(std::string file_name = "");
-	void add_league(std::string league_name, int league_id);
+	void add_league(std::string league_name, int league_id, double league_money);
 	void add_team(std::string team_name, std::string owner, int league_id, double off_rating, double def_rating);
 };
 

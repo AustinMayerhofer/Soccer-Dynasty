@@ -2,28 +2,39 @@
 #include "Random.h"
 #include <iostream>
 
-Game::Game(Team* home_team, Team* away_team) : home(home_team), away(away_team) {
+Game::Game(Team* home_team, Team* away_team) : home(home_team), away(away_team), winner(NULL) {
 	
 }
 
 void Game::playSeasonGame() {
-	int home_goals = generate_team_goals(home, away);
-	int away_goals = generate_team_goals(away, home);
+	home_goals = generate_team_goals(home, away);
+	away_goals = generate_team_goals(away, home);
 
 	update_team_info(home_goals, away_goals);
+	update_winner();
 
 }
 
 // TODO: Update team info?
 // TODO: Add something that indicates if a game went into ET
 void Game::playKnockoutGame() {
-	int home_goals = generate_team_goals(home, away);
-	int away_goals = generate_team_goals(away, home);
+	home_goals = generate_team_goals(home, away);
+	away_goals = generate_team_goals(away, home);
 
 	if (home_goals == away_goals) {
-		pick_winner_in_extra_time(home, away, home_goals, away_goals);
+		pick_winner_in_extra_time();
 	}
-	
+
+	update_winner();
+
+}
+
+void Game::printGameInfo() {
+	std::cout << home->getName() << " " << home_goals << "-" << away_goals << " " << away->getName();
+}
+
+Team* Game::getWinner() {
+	return winner;
 }
 
 int Game::generate_team_goals(Team* team, Team* opponent) {
@@ -138,7 +149,7 @@ int Game::decrease_goals(int starting_goals, Team* team, Team* opponent) {
 }
 
 // chooses a winner if a knockout game is tied
-void Game::pick_winner_in_extra_time(Team* home, Team* away, int& home_goals, int& away_goals) {
+void Game::pick_winner_in_extra_time() {
 	Random rand;
 	int home_win_probability = home->getOffRating() + home->getDefRating();
 	int away_win_probability = away->getOffRating() + away->getDefRating();
@@ -171,4 +182,17 @@ void Game::update_team_info(int home_goals, int away_goals) {
 	home->setSeasonGA(home->getSeasonGA() + away_goals);
 	away->setSeasonGoals(away->getSeasonGoals() + away_goals);
 	away->setSeasonGA(away->getSeasonGA() + home_goals);
+}
+
+void Game::update_winner() {
+	if (home_goals > away_goals) {
+		winner = home;
+	}
+	else if (home_goals < away_goals) {
+		winner = away;
+	}
+	else {
+		winner = NULL;
+	}
+	
 }

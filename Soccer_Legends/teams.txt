@@ -45,8 +45,8 @@ Rotherham United,VACANT,2,67,67
 Atlanta United,VACANT,3,78,69
 Sporting KC,VACANT,3,71,70
 NY Red Bulls,VACANT,3,68,70
-LA Galaxy,VACANT,3,85,67
-DC United,VACANT,3,80,68
+LA Galaxy,VACANT,3,78,67
+DC United,VACANT,3,76,68
 Columbus Crew SC,VACANT,3,73,69
 LAFC,VACANT,3,73,69
 Seattle Sounders,VACANT,3,72,69
@@ -83,3 +83,51 @@ FC Augsburg,VACANT,4,75,74
 SC Freiburg,VACANT,4,75,73
 Dusseldorf,VACANT,4,73,72
 1. FC Nurnberg,VACANT,4,73,72
+Spain,VACANT,5,84,85
+France,VACANT,5,85,85
+Belgium,VACANT,5,84,85
+Germany,VACANT,5,84,83
+Portugal,VACANT,5,85,83
+Italy,VACANT,5,83,83
+England,VACANT,5,83,81
+Netherlands,VACANT,5,82,82
+Uruguay,VACANT,5,82,81
+Brazil,VACANT,5,82,80
+Argentina,VACANT,5,82,80
+Colombia,VACANT,5,80,78
+Poland,VACANT,5,79,76
+Denmark,VACANT,5,79,78
+Switzerland,VACANT,5,77,78
+Austria,VACANT,5,80,77
+Russia,VACANT,5,78,76
+Chile,VACANT,5,78,77
+Mexico,VACANT,5,77,78
+Turkey,VACANT,5,78,76
+Greece,VACANT,5,76,76
+Sweden,VACANT,5,76,76
+Czech Republic,VACANT,5,75,75
+Cameroon,VACANT,5,75,73
+Ivory Coast,VACANT,5,76,76
+Norway,VACANT,5,75,75
+Scotland,VACANT,5,74,74
+Wales,VACANT,5,76,74
+United States,VACANT,5,74,74
+Ireland,VACANT,5,73,75
+Slovenia,VACANT,5,73,74
+Paraguay,VACANT,5,74,73
+Hungary,VACANT,5,73,73
+Ecuador,VACANT,5,73,72
+Australia,VACANT,5,72,73
+Egypt,VACANT,5,72,73
+Venezuela,VACANT,5,74,70
+Iceland,VACANT,5,75,72
+Peru,VACANT,5,74,71
+Romania,VACANT,5,73,72
+Canada,VACANT,5,73,70
+Northern Ireland,VACANT,5,71,72
+South Africa,VACANT,5,71,70
+Finland,VACANT,5,70,69
+New Zealand,VACANT,5,69,68
+Bulgaria,VACANT,5,67,66
+Bolivia,VACANT,5,67,66
+India,VACANT,5,60,60

@@ -31,13 +31,14 @@ void World::read_leagues_file(std::string name) {
 
 	// iterate through each line in the file
 	while (getline(file, line)) {
-		std::string league_name, league_id;
+		std::string league_name, league_id, league_money;
 		std::stringstream league_info(line);
 
 		// obtain the tokens in the line
 		getline(league_info, league_name, ',');
-		getline(league_info, league_id);
-		add_league(league_name, std::stoi(league_id));
+		getline(league_info, league_id, ',');
+		getline(league_info, league_money);
+		add_league(league_name, std::stoi(league_id), std::stod(league_money));
 	}
 }
 
@@ -75,8 +76,8 @@ void World::throw_file_error(std::string file_name) {
 	exit(1);
 }
 
-void World::add_league(std::string league_name, int league_id) {
-	leagues.push_back(new League(league_name, league_id));
+void World::add_league(std::string league_name, int league_id, double league_money) {
+	leagues.push_back(new League(league_name, league_id, league_money));
 }
 
 void World::add_team(std::string team_name, std::string owner, int league_id, double off_rating, double def_rating) {

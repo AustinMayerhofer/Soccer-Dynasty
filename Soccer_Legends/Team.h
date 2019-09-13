@@ -6,6 +6,7 @@ class Team
 {
 public:
 	Team(std::string team_name, std::string team_owner, int league_identifier, double offensive_rating, double defensive_rating);
+	bool operator==(Team& team);
 	void printTeamBio();
 	void printSeasonInfo();
 	std::string getName();
