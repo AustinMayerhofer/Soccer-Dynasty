@@ -27,6 +27,7 @@ void League::playSeasonDoubleRoundRobin() {
 
 void League::playSeasonDoubleRoundRobinWithMoney() {
 	playSeasonDoubleRoundRobin();
+	deal_money_to_teams();
 
 }
 
@@ -34,6 +35,7 @@ void League::printStandings() {
 	for (unsigned int i = 0; i < standings.size(); i++) {
 		std::cout << i + 1 << ". ";
 		standings[i]->printSeasonInfo();
+		std::cout << " " << standings[i]->getMoney();
 		std::cout << std::endl;
 	}
 
@@ -115,7 +117,12 @@ void League::reset_season() {
 }
 
 void League::deal_money_to_teams() {
-	
+	double a1 = 95.0 / ((size() - 1) * size());
+	double x = (money - ((a1/100) * money * (size() - 1) * (size() / 2))) / size();
+
+	for (unsigned int i = 0; i < teams.size(); i++) {
+		standings[size() - i - 1]->setMoney(standings[size() - i - 1]->getMoney() + x + a1 * i * money / 100);
+	}
 }
 
 bool whichTeamIsBetter(Team* team1, Team* team2) {

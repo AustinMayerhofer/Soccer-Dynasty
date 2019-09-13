@@ -15,8 +15,11 @@ int main(int argc, char* argv[]) {
 	check_arguments(argc);
 	World earth(argv[1], argv[2]);
 	
-	//earth.league(1)->playSeasonDoubleRoundRobin();
-	//earth.league(1)->printStandings();
+	earth.league(1)->playSeasonDoubleRoundRobinWithMoney();
+	earth.league(1)->playSeasonDoubleRoundRobinWithMoney();
+	earth.league(1)->printStandings();
+
+	/*
 
 	std::vector<Team*> intl_teams;
 	std::vector<Team*> WC_teams;
@@ -34,6 +37,7 @@ int main(int argc, char* argv[]) {
 
 	Tournament WC(WC_teams, "World Cup");
 	WC.playWorldCupFormat();
+	*/
 
 	return 0;
 }

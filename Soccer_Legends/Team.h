@@ -10,6 +10,7 @@ public:
 	void printTeamBio();
 	void printSeasonInfo();
 	std::string getName();
+	double getMoney();
 	int getOffRating();
 	int getDefRating();
 	int getSeasonWins();
@@ -19,6 +20,7 @@ public:
 	int getSeasonGA();
 	int getSeasonGD();
 	int getSeasonPoints();
+	void setMoney(double money);
 	void setSeasonWins(int wins);
 	void setSeasonLosses(int losses);
 	void setSeasonDraws(int draws);
@@ -30,6 +32,7 @@ private:
 	std::string name;
 	std::string owner;
 	int league_id;
+	double money;
 	double off_rating;
 	double def_rating;
 	int season_wins;

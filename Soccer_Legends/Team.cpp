@@ -4,7 +4,7 @@
 
 
 Team::Team(std::string team_name, std::string team_owner, int league_identifier, double offensive_rating, double defensive_rating) :
-	name(team_name), owner(team_owner), league_id(league_identifier), off_rating(offensive_rating), 
+	name(team_name), owner(team_owner), league_id(league_identifier), money(0), off_rating(offensive_rating), 
 	def_rating(defensive_rating), season_wins(0), season_losses(0), season_draws(0)
 {
 }
@@ -24,6 +24,10 @@ void Team::printSeasonInfo() {
 
 std::string Team::getName() {
 	return name;
+}
+
+double Team::getMoney() {
+	return money;
 }
 
 int Team::getOffRating() {
@@ -60,6 +64,10 @@ int Team::getSeasonGD() {
 
 int Team::getSeasonPoints() {
 	return (season_wins * 3) + season_draws;
+}
+
+void Team::setMoney(double money) {
+	this->money = money;
 }
 
 void Team::setSeasonWins(int wins) {
